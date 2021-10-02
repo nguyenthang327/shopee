@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*main*/
+#main{
+
+}
+
+#main .header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    height:54px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+#main .header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:8px 16px;
+}
+
+#main .header .nav ul li{
+    position: relative;
+    display: inline-block;
+    line-height: 38px;
+}
+
+#main .header .nav ul li a{
+    padding: 8px 16px;
+    text-decoration: none;
+    list-style-type: none;
+    color: #000000;
+    letter-spacing: 4px;
+}
+
+#main .header .nav ul li:hover{
+    background-color: #ccc;
+}
+
+#main .header .subnav{
+    display:none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #ffffff;
+}
+
+#main .header .nav .nav-right .subnav li>a{
+    display: block;
+    min-width: 130px;
+    letter-spacing: initial;
+    padding-left: 10px;
+}
+
+#main .header .nav .nav-right li:hover .subnav,#main .header .nav .nav-right .subnav >li:hover .subnav-2 {
+   display: inline-block;
+}
+
+#main .header .nav .nav-right .subnav .subnav-2{
+    display: none;
+    position: absolute;
+    top:12px;
+    left: 156px;
+    background-color: #ffffff;
+}
+
+/* END MAIN*/
+
+/* slide */
+
+.slide{
+    position: relative;
+    margin-top: 54px;
+    background: url('../img/local.jpg') top center/ cover no-repeat;
+    padding-top: 50%;
+}
+
+.slide .text-center {
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translateX(-50%);
+    text-align: center;
+    letter-spacing: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.slide h1{
+    font-size: 36px;
+}
+
+.slide .text-center span{
+    display: inline-block;
+    background-color:#000000;
+    padding: 11px 16px;
+    opacity: 0.7;
+}
+
+#content{
+    padding: 8px 16px;
+}
+
+/*project*/
+
+#content  .text-content{
+    padding: 32px 16px;
+}
+
+#content  .text-content h1{
+    margin:10px 0px;
+    padding:16px 0px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#content .row{
+    display: flex;
+    justify-content: center;
+}   
+
+#content .house,#content .person{
+    position: relative;
+    top: 0;
+    left: -8px;
+    padding: 0px 8px;
+    margin-bottom: 16px;
+}
+
+#content .image-projects .image-house,
+#content .section-about .row .image-name{
+    width: 100%;
+}
+
+#content .image-projects .description{
+    position: absolute;
+    top: 0;
+    left: 8px;
+    padding: 8px 16px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#content .image-projects .description h3{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+/* About */
+
+#content .text-content .text-description-content{
+    margin:15px 0px;
+}
+
+#content .person >h3{
+    font-weight: lighter;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px;
+    color: #000000;
+}
+
+#content .special-person p {
+   margin: 15px 0px;
+}
+
+#content .special-person .how-to-contact{
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border: none;
+}
+
+#content .special-person .how-to-contact:hover{
+    background-color: #ccc;
+}
+
+
+/* Contact */
+
+.font-16{
+    font-size: 16px;
+}
+
+.border-bottom{
+    border-bottom: #ddd solid 1px;
+}
+
+#content .section-contact form{
+    display: block;
+}
+
+#content .section-contact input[type=text],
+#content .section-contact input[type=email]{
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#content .section-contact input[type=submit]{
+    /* display: block; */
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px 16px;
+    margin:16px 0px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 2px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+#footer{
+    background-color: #000;
+    height: 84px;
+}
+.text-footer{
+    color: #ffffff;
+    text-align: center;
+    line-height: 84px;
+}
+.text-footer>a{
+    color: #ffffff;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+            
+        }
+        ul{
+            display: none;
+        }
+        .prevent:focus ~ ul{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <h1>js basic</h1>
+    <script src="./main.js"></script> -->
+
+    <h1 class="heading">HTML DOM</h1>
+
+    <h1 class="head">HTML Text</h1>
+
+    <div class="box" contenteditable="">
+        <ul>This is ul tag</ul>
+    </div>
+
+    <div class="box-2 box-3" >
+        <h1>Class list</h1>
+    </div>
+
+    <!-- DOM events -->
+
+    <!-- cách 1 -->
+    <h1 onclick="console.log(this)"><span>DOM events</span></h1>
+
+    <!-- cách 2 -->
+
+    <h2>
+        <span>DOM evernts 2</span>
+    </h2>
+    <h2>
+        <span>DOM evernts 3</span>
+    </h2>
+    <h2>
+        <span>DOM evernts 4</span>
+    </h2>
+
+
+    <!-- example DOM -->
+    <input type="text">
+    <input type="checkbox">
+
+    <select>
+        <option value="1">JS</option>
+        <option value="2">PHP</option>
+        <option value="3">Ruby</option>
+    </select>
+
+
+    <!-- prevent Defalut -->
+    <a href="https://f8.edu.vn">
+        Học lập trình
+    </a>
+    <a style="margin-left: 20px;" href="https://google.com.vn">
+        Tìm kiếm
+    </a>
+
+    <!-- prevent Defalut example 2 -->
+    <br>
+    <br>
+    <input class="prevent" placeholder="Tìm kiếm">
+
+    <ul>
+        <li>PHP</li>
+        <li>Javascript</li>
+        <li>golang</li>
+    </ul>
+
+    <!-- stopPropagation -- ngăn chặn sự kiện nổi bọt khi event vào thẻ con mà không ảnh hưởng đến thẻ cha -->
+    <br>
+    <br>
+
+
+    <div class="classDiv">
+        DIV
+        <button>Click me</button>
+    </div>
+
+    <button id="btn">Click me</button>
+
+    <script src="./dom.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+/* RESET CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+    1. Từ ngoài vào trong
+    2. Từ trên xuống dưới
+    3. Tổng quan đến chi tiết
+*/
+
+/*
+    1.Vị trí
+    2.Kích thước (width, height)
+    3. Màu sắc
+    4. Kiểu dáng(hình tròn ,kiểu chữ, hình vuông...)
+*/
+.text-white{
+    color: #fff !important;
+}
+
+.mr-16{
+    margin-right: 16px !important;
+}
+
+#main{
+   
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 46px;
+    background-color: #000;
+
+    z-index: 1;
+   
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav> li{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;  
+}
+
+#nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display:inline-block;
+}
+
+
+#nav>li:hover>a ,#nav .subnav li:hover a{
+    color: #000 ;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0 , 0, 0, 0.3);
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+#nav .subnav a{
+    min-width: 160px;
+    color: #000;
+    padding: 0 8px;
+    line-height: 38px;
+}
+
+#nav> li:hover .subnav{
+    display: block;
+}
+
+.search-btn{
+    cursor: pointer;
+}
+
+.search-btn .icon-search,.mobile-menu-btn .icon-menu{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+.mobile-menu-btn{
+    display: none;
+}
+
+.search-btn .icon-search:hover{
+    background-color: #f44336;
+}
+
+        /* padding-top hoặc padding-bottom 50% có nghĩa là hiển thị 50% 
+        theo chiều ngang của chính nó */
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+   padding-top: 50%;
+   background: url('/w3_band/assets/img/slider/slider1.jpg') top center/ cover no-repeat;
+}  
+
+#slider .text-center{
+    position: absolute;
+    bottom: 47px;
+    /* width: 100%; */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    /* padding:32px 16px ; */
+    text-align: center  ;
+}
+
+#slider .text-center .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+    
+}
+
+#slider .text-center .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content{
+
+}
+
+#content .section-content{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0px;
+}
+
+#content .section-content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#content .section-content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin: 25px 0px;
+    opacity: 0.6;
+}
+
+#content .section-content .about-text{
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .section-content .member-list{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 47px;
+}
+
+#content .member-list .member-name{
+    font-size: 15px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+#content .member-list .member-img{
+    border-radius: 4px;
+    width: 154px;
+    height: 154px;
+}
+
+/* TOUR SECTION */
+
+#content .tour-section{
+    background: #000000;
+    
+}
+
+#content .ticket-list {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+#content .ticket-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: #757575;
+}
+
+#content .ticket-list .sout-out{
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 3px 4px;
+}
+
+#content .ticket-list .quantity{
+    float: right; /*Được hiểu là thẻ block nên ta có thể thêm height width margin */
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    margin-right: 16px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+/* Place */
+#content .place-list{
+    margin-top:32px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+#content .place-list .place-item:nth-child(2){
+    padding: 0 16px;
+}
+
+#content .place-list .place-item .place-image:hover{
+    opacity: 0.6;
+}
+
+#content .place-list .place-image{
+    display: block;
+    width: 100%;
+}
+
+#content .place-list .place-item .place-body{
+    background-color: #fff;
+    padding: 0.15px 16px;
+}
+
+#content .place-list .place-heading,
+#content .place-list .place-time,
+#content .place-list .place-description{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#content .place-list .place-time{
+    color: #ccc;
+}
+
+#content .place-list .place-buy-btn{
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding:10px 13px;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+/* Contact */
+#contact{
+    
+}
+
+#contact .contact-information{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0px;
+}
+
+#contact .contact-address p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#contact .font-icons{
+    margin-right: 15px;
+}
+
+.contact-email{
+    font-size: 15px;
+}
+
+#contact .contact-email .contact-form{
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    
+}
+
+.contact-email .email-bottom .contact-form{
+    /* margin-left: 200px; */
+    width: 100%;
+    margin-top: 8px;
+}
+
+
+#contact .email-send{
+    float: right;
+   
+}
+
+#contact .email-send input{
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    margin: 16px 0px;
+    padding: 9px 12px;
+    border-radius: 5px;
+}
+    /* Map*/
+.contact-map .map-image{
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+}
+
+    /* Footer */
+#footer{
+    text-align: center;
+    padding: 64px 16px;
+    color: #ccc;
+}
+
+#footer .icons-item{
+    font-size: 25px;
+}
+
+#footer .author{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#footer .author a{
+    color: rgb(83, 77, 77);
+}
+
